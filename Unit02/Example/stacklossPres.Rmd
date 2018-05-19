@@ -1,0 +1,29 @@
+---
+title: "StackLoss Example"
+author: "Terry Johnson"
+date: "5/12/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown
+## Week 2 Unit 2 Lecture Assignment
+## Terry Johnson 
+## 12MAY2018
+
+
+# Introduction
+#Display Summary Data of the stackloss table
+```{r, cache=FALSE}
+summary(stackloss) # display summary data on stackloss
+str(stackloss)     # display structure of stackloss
+str(stackloss$Air.Flow)      # show the structure of Air.Flow 
+str(stackloss$stack.loss)    # show the structure of stack.loss
+```
+# Scatter Gram Plot of Air.Flow vs Stack.loss 
+```{r}
+plot(stackloss$stack.loss, stackloss$Air.Flow, main="scatterplot Example",xlab="stack.loss", ylab="Air.Flow")
+```
