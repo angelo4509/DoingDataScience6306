@@ -100,3 +100,8 @@ head(sorted.Females,10)
 ```{r W5P3_d}
 write.csv(head(sorted.Females[,c(-2,-3,-4)],10),"Top10Females.csv")
 ```
+
+
+## 4.
+# Git hub location.
+'https://github.com/angelo4509/DoingDataScience6306/tree/master/05%20-%20Week'
